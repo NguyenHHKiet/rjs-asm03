@@ -4,42 +4,40 @@
 
 ## Introduction
 
-Experience unlimited phone shopping at [BOUTIQUE](https://rjs-asm03-nguyenhhkiet.vercel.app/). With a variety of designs, quality and value, we bring you a convenient and reliable online shopping space. Explore the world of smart technology today!
+Experience unlimited phone shopping at [BOUTIQUE](https://rjs-asm03-nguyenhhkiet.vercel.app/). With a variety of designs, quality, and value, we offer you a convenient and reliable online shopping space. Explore the world of smart technology today!
 
-### Description
+### Project Description
 
-Project Overview:
-
--   Create a total Layout including NavBar and Footer
--   List of categories
--   List of products
--   Display product detail popup
--   Create a product list view interface
--   Create an interface to view product details
--   Handling account login/registration
--   Add product to cart
--   Create a shopping cart view interface
--   Create Checkout interface
--   Create livechat screen
+- **Layout Creation:** Includes NavBar and Footer
+- **Categories:** List of product categories
+- **Products:** List of products
+- **Product Details:** Display detailed product information in a popup
+- **Product List View:** Create an interface for listing products
+- **Product Detail View:** Create an interface to view product details
+- **Account Management:** Handle account login/registration
+- **Cart Management:** Add products to the cart
+- **Cart View:** Create an interface to view the cart
+- **Checkout:** Create a checkout interface
+- **Live Chat:** Create a live chat screen
 
 ## Tech Stack
 
--   ReactJS
--   React-Redux
--   React-Router-Dom
--   Bootstrap
+- ReactJS
+- React-Redux
+- React-Router-Dom
+- Bootstrap
 
 ## Features
 
-👉 Home Page: Dynamic home page showcases.
+👉 **Home Page:** Dynamic home page showcasing featured products.
 
-👉 Detail Page: Display detailed room information.
+👉 **Detail Page:** Display detailed information about products.
 
-👉 Cart Page: Update the user's shopping cart when adding products, displaying necessary information about price and number of products in the cart.
+👉 **Cart Page:** Update the user's shopping cart when adding products, displaying essential information about prices and quantities in the cart.
 
-👉 SignUp/SignIn Page: Seamless onboarding with secure signin and signup functionalities.
+👉 **SignUp/SignIn Page:** Seamless and secure registration and login functionalities.
 
-👉 Responsive: Full responsiveness across devices for consistent user experience; fluid design adapts seamlessly to various screen sizes, ensuring accessibility.
+👉 **Responsive:** Fully responsive design across devices; fluid design adapts seamlessly to various screen sizes, ensuring accessibility.
 
 ## Quick Start
 
@@ -47,22 +45,22 @@ Follow these steps to set up the project locally on your machine.
 
 **Prerequisites**
 
-Make sure you have the following installed on your machine:
+Ensure you have the following installed on your machine:
 
--   Git
--   Node.js
--   npm (Node Package Manager)
+- Git
+- Node.js
+- npm (Node Package Manager)
 
 **Installation**
 
 Install the project dependencies using npm:
 
-```javascript
+```bash
 npm install
 ```
 
 **Running the Project**
 
-```javascript
+```bash
 npm run start
 ```
