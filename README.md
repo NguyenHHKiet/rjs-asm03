@@ -93,6 +93,7 @@ Experience unlimited phone shopping at [BOUTIQUE APPLE](https://rjs-asm03-nguyen
 -   React-Redux
 -   React-Router-Dom
 -   Bootstrap
+-   Prettier, ESLint, and Husky
 
 ### Setup Prettier, ESLint, and Husky for code quality
 
