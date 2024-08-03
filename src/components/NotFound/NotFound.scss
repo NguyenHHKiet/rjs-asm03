@@ -17,9 +17,13 @@ body.not-found {
     background-color: var(--bg);
     color: var(--fg);
     display: flex;
-    font: 1em/1.5 Nunito, sans-serif;
+    font:
+        1em/1.5 Nunito,
+        sans-serif;
     height: 100vh;
-    transition: background-color var(--trans-dur), color var(--trans-dur);
+    transition:
+        background-color var(--trans-dur),
+        color var(--trans-dur);
 }
 main.main-not-found {
     display: grid;

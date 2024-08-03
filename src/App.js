@@ -43,7 +43,7 @@ const router = createBrowserRouter([
                     </Suspense>
                 ),
                 loader: () =>
-                    import("./API/data").then((module) => module.loader()),
+                    import("./API/data").then(module => module.loader()),
             },
             {
                 path: "shop",
@@ -53,7 +53,7 @@ const router = createBrowserRouter([
                     </Suspense>
                 ),
                 loader: () =>
-                    import("./API/data").then((module) => module.loader()),
+                    import("./API/data").then(module => module.loader()),
             },
             {
                 path: "detail/:productId",
@@ -62,9 +62,9 @@ const router = createBrowserRouter([
                         <DetailPage />
                     </Suspense>
                 ),
-                loader: (meta) =>
-                    import("./API/data").then((module) =>
-                        module.loadDetail(meta)
+                loader: meta =>
+                    import("./API/data").then(module =>
+                        module.loadDetail(meta),
                     ),
             },
             { path: "cart", element: <CartPage />, loader: cartLoader },

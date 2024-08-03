@@ -9,7 +9,7 @@ const MainNavigation = () => {
     const token = useRouteLoaderData("root");
     const [user, setUser] = useState(token);
     const dispatch = useDispatch();
-    const isAuthenticated = useSelector((state) => state.isAuthenticated);
+    const isAuthenticated = useSelector(state => state.isAuthenticated);
 
     const logoutHandler = () => {
         dispatch({ type: "ON_LOGOUT" });
@@ -28,7 +28,8 @@ const MainNavigation = () => {
                             to={"/"}
                             className={({ isActive }) =>
                                 isActive ? classes.active : undefined
-                            }>
+                            }
+                        >
                             Home
                         </NavLink>
                     </li>
@@ -37,7 +38,8 @@ const MainNavigation = () => {
                             to={"/shop"}
                             className={({ isActive }) =>
                                 isActive ? classes.active : undefined
-                            }>
+                            }
+                        >
                             Shop
                         </NavLink>
                     </li>
@@ -51,7 +53,8 @@ const MainNavigation = () => {
                             to={"/cart"}
                             className={({ isActive }) =>
                                 isActive ? classes.active : undefined
-                            }>
+                            }
+                        >
                             <i className="bi bi-bag-check-fill me-1"></i>
                             Cart
                         </NavLink>
@@ -63,7 +66,8 @@ const MainNavigation = () => {
                                 <NavLink>{user.username}</NavLink>
                                 <i
                                     className="bi bi-caret-down-fill"
-                                    style={{ fontSize: "0.75rem" }}></i>
+                                    style={{ fontSize: "0.75rem" }}
+                                ></i>
                             </li>
                             <li className="fst-italic">
                                 <button type="submit" onClick={logoutHandler}>
@@ -77,7 +81,8 @@ const MainNavigation = () => {
                                 to={"/login"}
                                 className={({ isActive }) =>
                                     isActive ? classes.active : undefined
-                                }>
+                                }
+                            >
                                 Login
                             </NavLink>
                         </li>

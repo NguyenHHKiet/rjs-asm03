@@ -8,7 +8,7 @@ const defaultRelatedState = {
 const relatedReducer = (state, action) => {
     if (action.type === "ADD") {
         const existingRelatedItemIndex = state.items.findIndex(
-            (item) => item._id.$oid === action.item._id.$oid
+            item => item._id.$oid === action.item._id.$oid,
         );
 
         const existingRelatedItem = state.items[existingRelatedItemIndex];
@@ -37,10 +37,10 @@ const relatedReducer = (state, action) => {
 const RelatedProductProvider = ({ children }) => {
     const [relatedState, dispatchRelatedAction] = useReducer(
         relatedReducer,
-        defaultRelatedState
+        defaultRelatedState,
     );
 
-    const addItemToRelatedHandler = (item) => {
+    const addItemToRelatedHandler = item => {
         dispatchRelatedAction({ type: "ADD", item: item });
     };
 

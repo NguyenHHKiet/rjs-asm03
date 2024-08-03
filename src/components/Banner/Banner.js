@@ -12,7 +12,8 @@ const Banner = () => {
             className={`${classes.showcase} py-3 mb-5`}
             style={{
                 background: `url(${image}) no-repeat center center/cover`,
-            }}>
+            }}
+        >
             <div className={classes.content}>
                 <h6 className="text-uppercase opacity-50 fst-italic">
                     New Inspiration 2020
@@ -22,7 +23,8 @@ const Banner = () => {
                 </h2>
                 <Link
                     to={"/shop"}
-                    className="bg-black text-white py-1 px-3 mt-2 fst-italic">
+                    className="bg-black text-white py-1 px-3 mt-2 fst-italic"
+                >
                     Browse collections
                 </Link>
             </div>

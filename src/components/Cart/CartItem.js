@@ -14,7 +14,7 @@ const CartItem = ({ item, setIsLoading }) => {
     // function action dispatched
     const moduleAction = (type, item) => {
         dispatch({ type: type, item: item });
-        setIsLoading((prevent) => !prevent); // help lifecycle return new local storage
+        setIsLoading(prevent => !prevent); // help lifecycle return new local storage
     };
 
     // delete item from
@@ -55,7 +55,8 @@ const CartItem = ({ item, setIsLoading }) => {
                 <div>
                     <i
                         className="bi bi-caret-left-fill"
-                        onClick={minusHandler}></i>
+                        onClick={minusHandler}
+                    ></i>
                     <input
                         id="id_form-0-quantity"
                         min={0}
@@ -67,7 +68,8 @@ const CartItem = ({ item, setIsLoading }) => {
                     />
                     <i
                         className="bi bi-caret-right-fill"
-                        onClick={addHandler}></i>
+                        onClick={addHandler}
+                    ></i>
                 </div>
             </td>
             <td>{total}</td>

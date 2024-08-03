@@ -37,19 +37,19 @@ const Categories = () => {
     const navigated = useNavigate();
     const [enteredSearch, setEnteredSearch] = useState("");
 
-    const isData = data.map((product) => transformObject(product).info);
+    const isData = data.map(product => transformObject(product).info);
 
     let content = isData;
     // handling the linked
-    const searchItemsHandler = (event) => {
+    const searchItemsHandler = event => {
         if (event.key === "Enter" || event.charCode === 13)
             navigated(`?search=${enteredSearch}`);
     };
 
     // searching based on input type
     if (searchId) {
-        content = isData.filter((item) =>
-            item.name.toLowerCase().includes(searchId.toLowerCase())
+        content = isData.filter(item =>
+            item.name.toLowerCase().includes(searchId.toLowerCase()),
         );
     }
 
@@ -63,14 +63,14 @@ const Categories = () => {
 
             default:
                 content = isData.filter(
-                    (item) =>
-                        item.category.toLowerCase() === sortId.toLowerCase()
+                    item =>
+                        item.category.toLowerCase() === sortId.toLowerCase(),
                 );
                 break;
         }
     }
 
-    const Title = (item) => {
+    const Title = item => {
         let linked;
         if (
             item !== "APPLE" &&
@@ -84,7 +84,8 @@ const Categories = () => {
             <Link
                 key={item}
                 className="px-3 py-2 fst-italic fw-light"
-                to={linked}>
+                to={linked}
+            >
                 {item}
             </Link>
         );
@@ -97,7 +98,7 @@ const Categories = () => {
                     placeholder="Enter Search Here!"
                     aria-label="Enter Search Here!"
                     className="py-2"
-                    onChange={(e) => setEnteredSearch(e.target.value)}
+                    onChange={e => setEnteredSearch(e.target.value)}
                     onKeyPress={searchItemsHandler}
                 />
             </InputGroup>
@@ -114,7 +115,7 @@ const Categories = () => {
         <div className={`d-grid gap-4 py-4`}>
             <Row>
                 {content.length > 0 ? (
-                    content.map((product) => (
+                    content.map(product => (
                         <ProductItem
                             key={product._id.$oid}
                             product={product}
@@ -133,7 +134,7 @@ const Categories = () => {
             <div className="mb-5 pb-5">
                 <h3 className="text-uppercase fst-italic mb-3">Categories</h3>
                 <div className={classes.arrTitle}>
-                    {arrTitle.map((item) => Title(item))}
+                    {arrTitle.map(item => Title(item))}
                 </div>
             </div>
             <div>

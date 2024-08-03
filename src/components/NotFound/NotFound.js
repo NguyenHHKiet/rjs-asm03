@@ -15,7 +15,8 @@ export default function NotFound() {
                         width="300px"
                         height="300px"
                         role="img"
-                        aria-label="A piece of paper torn in half">
+                        aria-label="A piece of paper torn in half"
+                    >
                         <g
                             className="paper__outline"
                             fill="none"
@@ -23,10 +24,12 @@ export default function NotFound() {
                             strokeWidth={8}
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            transform="translate(61,4)">
+                            transform="translate(61,4)"
+                        >
                             <g
                                 className="paper__top"
-                                transform="translate(0,25)">
+                                transform="translate(0,25)"
+                            >
                                 <polygon
                                     className="paper__shadow"
                                     fill="hsl(0,10%,70%)"
@@ -59,7 +62,8 @@ export default function NotFound() {
                                 <polyline points="0 148,0 0,137 0,187 50,187 148" />
                                 <g
                                     className="paper__lines"
-                                    stroke="hsl(0,10%,70%)">
+                                    stroke="hsl(0,10%,70%)"
+                                >
                                     <polyline points="22 88,165 88" />
                                     <polyline points="22 110,165 110" />
                                     <polyline points="22 132,165 132" />
@@ -73,7 +77,8 @@ export default function NotFound() {
                             </g>
                             <g
                                 className="paper__bottom"
-                                transform="translate(0,25)">
+                                transform="translate(0,25)"
+                            >
                                 <polygon
                                     className="paper__shadow"
                                     fill="hsl(0,10%,70%)"
@@ -90,7 +95,8 @@ export default function NotFound() {
                                 <polyline points="187 148,187 242,0 242,0 148" />
                                 <g
                                     className="paper__lines"
-                                    stroke="hsl(0,10%,70%)">
+                                    stroke="hsl(0,10%,70%)"
+                                >
                                     <polyline points="22 154,165 154" />
                                     <polyline points="22 176,165 176" />
                                     <polyline points="22 198,94 198" />

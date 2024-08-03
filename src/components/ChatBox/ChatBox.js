@@ -83,7 +83,8 @@ const ChatBox = () => {
                     <textarea
                         placeholder="Enter a message!"
                         spellCheck="false"
-                        required></textarea>
+                        required
+                    ></textarea>
                     <span className="me-1">
                         <i className="bi bi-stickies"></i>
                     </span>

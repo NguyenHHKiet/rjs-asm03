@@ -31,7 +31,7 @@ const CheckOutForm = () => {
         totalAmount = transformPrice(data?.totalAmount);
     }
 
-    const handleSubmit = (event) => {
+    const handleSubmit = event => {
         const form = event.currentTarget;
         if (!form.checkValidity()) {
             event.preventDefault();
@@ -49,7 +49,8 @@ const CheckOutForm = () => {
                     <Form
                         noValidate
                         validated={validated}
-                        onSubmit={handleSubmit}>
+                        onSubmit={handleSubmit}
+                    >
                         <Row className="mb-3">
                             <Form.Group>
                                 <Form.Label className="text-uppercase">
@@ -110,7 +111,8 @@ const CheckOutForm = () => {
                         </Row>
                         <Button
                             type="submit"
-                            className="rounded-0 bg-black px-4 py-2">
+                            className="rounded-0 bg-black px-4 py-2"
+                        >
                             Place order
                         </Button>
                     </Form>
@@ -118,12 +120,13 @@ const CheckOutForm = () => {
                 <Col md={4} sm={12}>
                     <Form className="bg-body-secondary p-4 rounded-1 mt-sm-2 mt-md-0">
                         <h4 className="text-uppercase my-3">your order</h4>
-                        {data.listCart.map((item) => (
+                        {data.listCart.map(item => (
                             <Item key={item._id} item={item} />
                         ))}
                         <Form.Group
                             as={Row}
-                            className="mb-3 text-uppercase h6 d-flex align-items-center">
+                            className="mb-3 text-uppercase h6 d-flex align-items-center"
+                        >
                             <Form.Label column sm="4">
                                 total
                             </Form.Label>

@@ -28,7 +28,8 @@ const ListOfCategories = () => {
                         <Link to={"/shop?sort=iPhone"}>
                             <Ratio
                                 className="overflow-hidden rounded-3"
-                                aspectRatio="16x9">
+                                aspectRatio="16x9"
+                            >
                                 <img src={product_1} alt="" />
                             </Ratio>
                         </Link>
@@ -37,7 +38,8 @@ const ListOfCategories = () => {
                         <Link to={"/shop?sort=MacBook"}>
                             <Ratio
                                 className="overflow-hidden rounded-3"
-                                aspectRatio="16x9">
+                                aspectRatio="16x9"
+                            >
                                 <img src={product_2} alt="" />
                             </Ratio>
                         </Link>
@@ -48,7 +50,8 @@ const ListOfCategories = () => {
                         <Link to={"/shop?sort=iPad"}>
                             <Ratio
                                 className="overflow-hidden rounded-3"
-                                aspectRatio="1x1">
+                                aspectRatio="1x1"
+                            >
                                 <img src={product_3} alt="" />
                             </Ratio>
                         </Link>
@@ -57,7 +60,8 @@ const ListOfCategories = () => {
                         <Link to={"/shop?sort=Watch"}>
                             <Ratio
                                 className="overflow-hidden rounded-3"
-                                aspectRatio="1x1">
+                                aspectRatio="1x1"
+                            >
                                 <img src={product_4} alt="" />
                             </Ratio>
                         </Link>
@@ -66,7 +70,8 @@ const ListOfCategories = () => {
                         <Link to={"/shop?sort=AirPod"}>
                             <Ratio
                                 className="overflow-hidden rounded-3"
-                                aspectRatio="1x1">
+                                aspectRatio="1x1"
+                            >
                                 <img src={product_5} alt="" />
                             </Ratio>
                         </Link>

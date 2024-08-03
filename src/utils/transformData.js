@@ -1,9 +1,9 @@
-export const transformPrice = (price) =>
+export const transformPrice = price =>
     `${Number(price)
         .toLocaleString("vi-VN", { style: "currency", currency: "VND" })
         .slice(0, -1)} VND`;
 
-export const transformObject = (product) => {
+export const transformObject = product => {
     return {
         info: {
             name: product.name,

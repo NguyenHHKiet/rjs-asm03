@@ -32,7 +32,8 @@ const CartList = () => {
         <Fragment>
             <div
                 className="px-5 mb-5 bg-body-secondary w-100 d-flex justify-content-between align-items-center"
-                style={{ height: "25vh" }}>
+                style={{ height: "25vh" }}
+            >
                 <h2 className="text-uppercase fst-italic">Cart</h2>
                 <p className="text-uppercase fst-italic text-secondary fw-semibold">
                     Cart
@@ -50,7 +51,8 @@ const CartList = () => {
                         ) : (
                             <div
                                 className="d-flex align-items-center justify-content-center"
-                                style={{ height: "20vh" }}>
+                                style={{ height: "20vh" }}
+                            >
                                 Not Product in Cart
                             </div>
                         )}
@@ -60,7 +62,8 @@ const CartList = () => {
                             <h4 className="text-uppercase my-3">Cart total</h4>
                             <Form.Group
                                 as={Row}
-                                className="text-uppercase h6 d-flex align-items-center">
+                                className="text-uppercase h6 d-flex align-items-center"
+                            >
                                 <Form.Label column sm="4">
                                     subtotal
                                 </Form.Label>
@@ -77,7 +80,8 @@ const CartList = () => {
                             <hr className="my-1" />
                             <Form.Group
                                 as={Row}
-                                className="mb-3 text-uppercase h6 d-flex align-items-center">
+                                className="mb-3 text-uppercase h6 d-flex align-items-center"
+                            >
                                 <Form.Label column sm="4">
                                     total
                                 </Form.Label>
@@ -99,7 +103,8 @@ const CartList = () => {
                                 />
                                 <Button
                                     variant="dark"
-                                    className="bg-black text-white fst-italic rounded-0 w-100 p-3">
+                                    className="bg-black text-white fst-italic rounded-0 w-100 p-3"
+                                >
                                     <i className="bi bi-gift-fill me-2"></i>
                                     Apply coupon
                                 </Button>
@@ -111,17 +116,20 @@ const CartList = () => {
                     <Col
                         md={8}
                         sm={12}
-                        className="bg-body-secondary d-flex align-items-center justify-content-between p-3">
+                        className="bg-body-secondary d-flex align-items-center justify-content-between p-3"
+                    >
                         <Link
                             to={"/shop"}
-                            className="d-flex m-0 p-0 fst-italic gap-1 text-secondary text-decoration-none">
+                            className="d-flex m-0 p-0 fst-italic gap-1 text-secondary text-decoration-none"
+                        >
                             <i className="bi bi-arrow-left text-black"></i>
                             Continue shopping
                         </Link>
                         <Link
                             to={"/checkout"}
                             className="d-flex m-0 p-0 fst-italic gap-1 p-2 bg-white text-secondary text-decoration-none"
-                            style={{ border: "1px solid black" }}>
+                            style={{ border: "1px solid black" }}
+                        >
                             Processed to checkout
                             <i className="bi bi-arrow-right text-black"></i>
                         </Link>

@@ -30,7 +30,8 @@ const ProductItem = ({ product, isLink, type }) => {
             xs={6}
             md={3}
             onClick={onClickHandler}
-            className={classes.images}>
+            className={classes.images}
+        >
             <article>
                 <figure>
                     <img src={product.img} alt="img1" loading="lazy" />

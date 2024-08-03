@@ -3,7 +3,7 @@ import React from "react";
 const RelatedProductContext = React.createContext({
     items: [],
     totalQuantity: 0,
-    addItem: (item) => {},
+    addItem: item => {},
 });
 
 export default RelatedProductContext;

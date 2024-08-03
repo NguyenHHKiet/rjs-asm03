@@ -8,7 +8,7 @@ import { transformPrice } from "../../../utils/transformData";
 
 const PopUpDetail = () => {
     const dispatch = useDispatch();
-    const isInfo = useSelector((state) => state.info);
+    const isInfo = useSelector(state => state.info);
     // show and hide about description detail
     const hidePopUpHandler = () => dispatch({ type: "HIDE_POPUP" });
 
@@ -23,7 +23,8 @@ const PopUpDetail = () => {
                 <i
                     className="bi bi-x-lg position-absolute top-0 end-0 m-3 px-2"
                     style={{ cursor: "pointer" }}
-                    onClick={hidePopUpHandler}></i>
+                    onClick={hidePopUpHandler}
+                ></i>
                 <h1 className="ms-2">{isInfo.name}</h1>
                 <p className="ms-2">{price}</p>
                 <p className="ms-2 d-none d-md-block">{isInfo.short_desc}</p>

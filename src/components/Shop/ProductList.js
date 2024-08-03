@@ -10,7 +10,8 @@ const ProductList = () => {
         <Fragment>
             <div
                 className="px-5 mb-5 bg-body-secondary w-100 d-flex justify-content-between align-items-center"
-                style={{ height: "25vh" }}>
+                style={{ height: "25vh" }}
+            >
                 <h2 className="text-uppercase fst-italic">Shop</h2>
                 <p className="text-uppercase fst-italic text-secondary fw-semibold">
                     Shop

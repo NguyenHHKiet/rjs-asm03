@@ -21,7 +21,7 @@ import classes from "./AuthForm.module.scss";
 const AuthForm = () => {
     const { pathname } = useLocation();
     const dispatch = useDispatch();
-    const isAuthenticated = useSelector((state) => state.isAuthenticated);
+    const isAuthenticated = useSelector(state => state.isAuthenticated);
     const navigate = useNavigate();
 
     const [validated, setValidated] = useState(false);
@@ -35,7 +35,7 @@ const AuthForm = () => {
         window.scrollTo(0, 0);
     }, []);
 
-    const handleSubmit = (event) => {
+    const handleSubmit = event => {
         event.preventDefault();
         const form = event.currentTarget;
 
@@ -124,7 +124,8 @@ const AuthForm = () => {
                     method="post"
                     noValidate
                     validated={validated}
-                    onSubmit={handleSubmit}>
+                    onSubmit={handleSubmit}
+                >
                     <h1 className="d-flex justify-content-center mb-5 fst-italic">
                         {pathname === "/login" ? "Sign In" : "Sign Up"}
                     </h1>
@@ -168,7 +169,8 @@ const AuthForm = () => {
                     <Button
                         type="submit"
                         variant="dark"
-                        className="w-100 rounded-0 p-3 opacity-75 text-uppercase">
+                        className="w-100 rounded-0 p-3 opacity-75 text-uppercase"
+                    >
                         {pathname === "/login" ? "Sign In" : "Sign Up"}
                     </Button>
                     <p className="mt-3 d-flex justify-content-center fst-italic">
@@ -177,7 +179,8 @@ const AuthForm = () => {
                             : "Create an account?"}
                         <Link
                             className={"ms-1"}
-                            to={pathname !== "/login" ? "/login" : "/register"}>
+                            to={pathname !== "/login" ? "/login" : "/register"}
+                        >
                             {pathname !== "/login" ? "Click" : "Sign Up"}
                         </Link>
                     </p>

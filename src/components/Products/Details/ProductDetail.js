@@ -26,17 +26,18 @@ const Description = ({ orderList, related }) => (
                         <li
                             key={index}
                             className="py-1"
-                            style={{ listStyle: "disc" }}>
+                            style={{ listStyle: "disc" }}
+                        >
                             {item}
                         </li>
                     ) : (
                         <Fragment key={index}></Fragment>
-                    )
+                    ),
                 )}
             </ul>
             <h1 className="text-uppercase fs-5 py-4">Related Product</h1>
             <Row>
-                {related.map((product) => (
+                {related.map(product => (
                     <ProductItem product={product} isLink={true} />
                 ))}
             </Row>
@@ -66,7 +67,8 @@ const ProductDetail = () => {
         return (
             <h1
                 style={{ height: "70vh" }}
-                className="d-flex align-items-center justify-content-center">
+                className="d-flex align-items-center justify-content-center"
+            >
                 Not Founded Product Id.
             </h1>
         );
@@ -104,7 +106,8 @@ const ProductDetail = () => {
                 <ToastContainer autoClose={2000} />
                 <div className={`${classes.showcase} gap-4 py-4`}>
                     <div
-                        className={`d-flex flex-wrap flex-row flex-md-column gap-2`}>
+                        className={`d-flex flex-wrap flex-row flex-md-column gap-2`}
+                    >
                         {detail.img.map((item, index) => (
                             <div key={index} className={classes.wrapper}>
                                 <img
@@ -133,21 +136,23 @@ const ProductDetail = () => {
                             </p>
                             <InputGroup
                                 className={classes.quantity}
-                                hasValidation>
+                                hasValidation
+                            >
                                 <Form.Control
                                     placeholder="QUANTITY"
                                     aria-label="QUANTITY"
                                     className="rounded-0 fst-italic opacity-75"
                                     type="number"
                                     min={0}
-                                    onChange={(e) => {
+                                    onChange={e => {
                                         setEnteredAmount(e.target.value);
                                     }}
                                 />
                                 <div className={classes.buttonQuantity}>
                                     <button
                                         className="btn minus1"
-                                        onClick={minusHandler}>
+                                        onClick={minusHandler}
+                                    >
                                         -
                                     </button>
                                     <input
@@ -157,13 +162,14 @@ const ProductDetail = () => {
                                         readOnly
                                         value={enteredAmount}
                                         type="number"
-                                        onChange={(e) => {
+                                        onChange={e => {
                                             setEnteredAmount(e.target.value);
                                         }}
                                     />
                                     <button
                                         className="btn add1"
-                                        onClick={addHandler}>
+                                        onClick={addHandler}
+                                    >
                                         +
                                     </button>
                                 </div>
@@ -171,7 +177,8 @@ const ProductDetail = () => {
                                     onClick={addToCartHandler}
                                     variant="dark"
                                     style={{ height: "min-content" }}
-                                    className="bg-black text-white fst-italic rounded-0">
+                                    className="bg-black text-white fst-italic rounded-0"
+                                >
                                     Add to Cart
                                 </Button>
                             </InputGroup>

@@ -88,7 +88,7 @@ const useGlobalReducer = (state = initialState, action) => {
         console.log(action.type);
         const { cart, existingCartItem, existingCartItemIndex } = findCartItem(
             state,
-            action
+            action,
         );
         let updatedItems;
 
@@ -113,7 +113,7 @@ const useGlobalReducer = (state = initialState, action) => {
                 JSON.stringify({
                     listCart: updatedItems,
                     totalAmount: updatedTotalAmount,
-                })
+                }),
             );
         } else {
             updatedItems = cart.listCart.concat(action.item);
@@ -124,7 +124,7 @@ const useGlobalReducer = (state = initialState, action) => {
                 JSON.stringify({
                     listCart: updatedItems,
                     totalAmount: updatedTotalAmount,
-                })
+                }),
             );
         }
 
@@ -167,7 +167,7 @@ const useGlobalReducer = (state = initialState, action) => {
             JSON.stringify({
                 listCart: updatedItems,
                 totalAmount: updatedTotalAmount,
-            })
+            }),
         );
 
         return {
@@ -192,7 +192,7 @@ const useGlobalReducer = (state = initialState, action) => {
                 cart.totalAmount - price * existingCartItem.amount;
             // remove object
             updatedItems = cart.listCart.filter(
-                (item) => item._id.$oid !== existingCartItem._id.$oid
+                item => item._id.$oid !== existingCartItem._id.$oid,
             );
 
             // save updated items
@@ -201,7 +201,7 @@ const useGlobalReducer = (state = initialState, action) => {
                 JSON.stringify({
                     listCart: updatedItems,
                     totalAmount: updatedTotalAmount,
-                })
+                }),
             );
         }
 
