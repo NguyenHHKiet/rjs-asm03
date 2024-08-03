@@ -20,6 +20,73 @@ Experience unlimited phone shopping at [BOUTIQUE APPLE](https://rjs-asm03-nguyen
 -   **Checkout:** Create a checkout interface
 -   **Live Chat:** Create a live chat screen
 
+### Requirements
+
+1. **Create a New ReactJS Project:**
+   Initialize a new project with:
+
+    ```bash
+    npx create-react-app rjs-asm03
+    ```
+
+2. **Set Up Router:**
+   Install `react-router-dom` and configure routes:
+
+    - HomePage: `/`
+    - ShopPage: `/shop`
+    - DetailPage: `/detail/<productId>`
+    - CartPage: `/cart`
+    - CheckoutPage: `/checkout`
+    - LoginPage: `/login`
+    - RegisterPage: `/register`
+
+3. **Create Layout:**
+
+    - **NavBar:** Includes links to HomePage, ShopPage, LoginPage, and CartPage.
+    - **Footer:** Three columns with dummy links (using Bootstrap 5).
+
+4. **Home Page:**
+
+    - **Banner:** Features a "Browse collections" button.
+    - **Categories:** Hover effect and redirection to ShopPage.
+    - **Products:** Display up to 8 products, format price, and use `img1` for images.
+    - **Additional Info:** Use Bootstrap for layout.
+
+5. **Product Popup:**
+
+    - Create `Popup` component with Redux actions `SHOW_POPUP` and `HIDE_POPUP`.
+
+6. **Shop Page:**
+
+    - Display products based on categories with a `ProductList` component.
+    - Enable product search and redirection to Detail Page.
+
+7. **Detail Page:**
+
+    - Show detailed product information and related products.
+
+8. **Account Management:**
+
+    - **Sign Up:** Validate and store user data in `localStorage`.
+    - **Sign In:** Validate login credentials and manage session with Redux.
+    - **Logout:** Clear user session and update `localStorage`.
+
+9. **Cart Management:**
+
+    - Manage cart items with Redux actions `ADD_CART`, `UPDATE_CART`, `DELETE_CART`.
+    - Persist cart data in `localStorage`.
+
+10. **Cart Page:**
+
+    - Display cart items, total price, and provide options to continue shopping or proceed to checkout.
+
+11. **Checkout Page:**
+
+    - Form for entering shipping and payment information; display order summary.
+
+12. **Live Chat (Optional):**
+    - Floating chat interface with toggle functionality.
+
 ## Tech Stack
 
 -   ReactJS
