@@ -94,6 +94,13 @@ Experience unlimited phone shopping at [BOUTIQUE APPLE](https://rjs-asm03-nguyen
 -   React-Router-Dom
 -   Bootstrap
 
+### Setup Prettier, ESLint, and Husky for code quality
+
+-   Installed and configured Prettier for code formatting
+-   Installed and configured ESLint for code linting
+-   Set up Husky with pre-commit hooks to enforce linting and formatting
+-   Added lint-staged to run Prettier and ESLint on staged files before commits
+
 ## Features
 
 👉 **Home Page:** Dynamic home page showcasing featured products.

@@ -24,7 +24,11 @@
         "start": "react-scripts --openssl-legacy-provider start",
         "build": "react-scripts --openssl-legacy-provider build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "prepare": "husky",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix",
+        "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
     },
     "eslintConfig": {
         "extends": [
@@ -42,6 +46,24 @@
             "last 1 chrome version",
             "last 1 firefox version",
             "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "eslint": "^8.57.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-jsx-a11y": "^6.9.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "eslint-plugin-react": "^7.35.0",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "husky": "^9.1.4",
+        "lint-staged": "^15.2.7",
+        "prettier": "3.3.3"
+    },
+    "lint-staged": {
+        "**/*": [
+            "prettier --write --ignore-unknown"
         ]
     }
 }
